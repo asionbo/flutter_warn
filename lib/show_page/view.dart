@@ -34,8 +34,10 @@ Widget buildView(ShowState state, Dispatch dispatch, ViewService viewService) {
       Flexible(
         flex: 1,
         child: RaisedButton(
-          color: Colors.blue,
-          child: Icon(Icons.fullscreen,color: Colors.white,),
+          color: Colors.black,
+          shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.all(Radius.circular(20))),
+          child: Icon(Icons.fullscreen,color: Colors.amber,),
           onPressed: () {
             Navigator.of(viewService.context)
                 .pushNamed('show_full', arguments: <String,dynamic>{'list':state.texts});

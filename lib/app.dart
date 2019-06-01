@@ -18,7 +18,7 @@ Widget createApp() {
     title: '',
     debugShowCheckedModeBanner: false,
     theme: ThemeData(
-      primarySwatch: Colors.blue,
+      primaryColor: Colors.white
     ),
     home: routes.buildPage('home', null),
     onGenerateRoute: (RouteSettings settings) {

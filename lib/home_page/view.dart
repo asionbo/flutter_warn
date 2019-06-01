@@ -15,20 +15,34 @@ Widget buildView(
     return showDialog(
       context: viewService.context,
       builder: (context) => new AlertDialog(
-        title: new Text('提示'),
+        shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.all(Radius.circular(20))),
+        title: new Text('提示',
+          style: TextStyle(
+              color: Colors.black,
+              fontWeight: FontWeight.w700
+          ),
+        ),
         content: new Text('确定退出程序吗？'),
         actions: <Widget>[
-          new FlatButton(
-            onPressed: () => Navigator.of(context).pop(false),
+          new RaisedButton(
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.all(Radius.circular(20))),
+            onPressed: () {
+              Navigator.of(context).pop(false);
+            },
             child: new Text('取消'),
-            textColor: Colors.grey,
-          ),
-          new FlatButton(
-            onPressed: (){
+            color: Colors.grey,
+            textColor: Colors.amberAccent,),
+          new RaisedButton(
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.all(Radius.circular(20))),
+            onPressed: () {
               Navigator.of(context).pop(true);
             },
             child: new Text('确定'),
-          ),
+            color: Colors.black,
+            textColor: Colors.amberAccent,)
         ],
       ),
     ) ?? false;
@@ -39,6 +53,17 @@ Widget buildView(
         appBar: AppBar(
           title: Text('Help !!!'),
           actions: <Widget>[
+            IconButton(
+              icon: Icon(Icons.info_outline,color: Colors.amberAccent,),
+              onPressed: (){
+                showAboutDialog(
+                    context: viewService.context,
+                  applicationIcon: Icon(Icons.notifications_active,color: Colors.amberAccent,),
+                  applicationName: 'help',
+                  applicationVersion: 'https://github.com/asionbo/flutter_warn'
+                );
+              },
+            )
           ],
         ),
         body: Container(
@@ -54,6 +79,11 @@ Widget buildView(
         onTabChangedListener: (position){
           dispatch(HomeActionCreator.onPageChangeAction(position));
         },
+        barBackgroundColor: Colors.white,
+        textColor: Colors.black,
+        activeIconColor: Colors.amber,
+        inactiveIconColor: Colors.black,
+        circleColor: Colors.black,
       ),
     ),
   );

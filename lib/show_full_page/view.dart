@@ -10,23 +10,30 @@ Widget buildView(ShowFullState state, Dispatch dispatch, ViewService viewService
     },
     child: Container(
       color: Colors.black,
-      child: SizedBox(
-        width: 250,
-        child: ScaleAnimatedTextKit(
-            onTap: () {
-              Navigator.of(viewService.context).pop('ok');
-            },
-            text: state.texts ?? ['Help me','救我','ヘルプ'],
-            textStyle: TextStyle(
+        child: SizedBox(
+          width: 250,
+          child: state.texts.length > 0 ? ScaleAnimatedTextKit(
+              onTap: () {
+                Navigator.of(viewService.context).pop('ok');
+              },
+              text: state.texts,
+              textStyle: TextStyle(
+                  color: Colors.white,
+                  fontSize: 60.0,
+                  fontWeight: FontWeight.bold,
+                  decoration: TextDecoration.none
+              ),
+              textAlign: TextAlign.center,
+              alignment: AlignmentDirectional.center // or Alignment.topLeft
+          ) : Text(
+            '请先添加文字',
+            style: TextStyle(
                 color: Colors.white,
                 fontSize: 60.0,
                 fontWeight: FontWeight.bold,
                 decoration: TextDecoration.none
-            ),
-            textAlign: TextAlign.center,
-            alignment: AlignmentDirectional.center // or Alignment.topLeft
-        ),
-      )
+            ),),
+        )
     ),
   );
 }

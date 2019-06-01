@@ -13,7 +13,7 @@ class ShowFullState implements Cloneable<ShowFullState> {
 }
 
 ShowFullState initState(Map<String, dynamic> args) {
-  final List<String> list = args['list'];
+  final List<String> list = args['list'] ?? [];
   return ShowFullState()
     ..texts = list
   ;
