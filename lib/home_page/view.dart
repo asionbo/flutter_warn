@@ -51,15 +51,15 @@ Widget buildView(
     onWillPop: _onWillPop,
     child: Scaffold(
         appBar: AppBar(
-          title: Text('Help !!!'),
+          title: Text('Warn'),
           actions: <Widget>[
             IconButton(
               icon: Icon(Icons.info_outline,color: Colors.amberAccent,),
               onPressed: (){
                 showAboutDialog(
                     context: viewService.context,
-                  applicationIcon: Icon(Icons.notifications_active,color: Colors.amberAccent,),
-                  applicationName: 'help',
+                  applicationIcon: Image.asset('images/logo.png',width: 40,height: 40),
+                  applicationName: 'Warn',
                   applicationVersion: 'https://github.com/asionbo/flutter_warn'
                 );
               },
@@ -80,7 +80,7 @@ Widget buildView(
           dispatch(HomeActionCreator.onPageChangeAction(position));
         },
         barBackgroundColor: Colors.white,
-        textColor: Colors.black,
+        textColor: Colors.amberAccent,
         activeIconColor: Colors.amber,
         inactiveIconColor: Colors.black,
         circleColor: Colors.black,
