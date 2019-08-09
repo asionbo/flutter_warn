@@ -12,14 +12,15 @@ Widget buildView(ShowFullState state, Dispatch dispatch, ViewService viewService
       color: Colors.black,
         child: SizedBox(
           width: 250,
-          child: state.texts.length > 0 ? ScaleAnimatedTextKit(
+          child: state.texts.length > 0 ? TypewriterAnimatedTextKit(
               onTap: () {
                 Navigator.of(viewService.context).pop('ok');
               },
+              duration: Duration(milliseconds: state.texts.reduce((a,b)=>a+b).length * 5000 ~/ 5),
               text: state.texts,
               textStyle: TextStyle(
                   color: Colors.white,
-                  fontSize: 60.0,
+                  fontSize: 150.0,
                   fontWeight: FontWeight.bold,
                   decoration: TextDecoration.none
               ),
@@ -29,7 +30,7 @@ Widget buildView(ShowFullState state, Dispatch dispatch, ViewService viewService
             '请先添加文字',
             style: TextStyle(
                 color: Colors.white,
-                fontSize: 60.0,
+                fontSize: 20.0,
                 fontWeight: FontWeight.bold,
                 decoration: TextDecoration.none
             ),),

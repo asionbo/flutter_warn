@@ -9,15 +9,23 @@ Widget buildView(ShowState state, Dispatch dispatch, ViewService viewService) {
   return Column(
     children: <Widget>[
       Flexible(
-        flex: 5,
+        flex: 3,
+        child: Image(
+          image: AssetImage('images/hacker_mind.png'),
+          fit: BoxFit.scaleDown,
+        ),
+      ),
+      Flexible(
+        flex: 3,
         child: Center(
           child: Container(
             child: SizedBox(
               width: 250.0,
-              child: state.texts != null && state.texts.length > 0 ? FadeAnimatedTextKit(
+              child: state.texts != null && state.texts.length > 0 ? TypewriterAnimatedTextKit(
                   onTap: () {
                     print("Tap Event");
                   },
+                  duration: Duration(milliseconds: state.texts.reduce((a,b)=>a+b).length * 5000 ~/ 5),
                   text: state.texts,
                   textStyle: TextStyle(
                       fontSize: 32.0,

@@ -17,11 +17,11 @@ Widget buildView(RingState state, Dispatch dispatch, ViewService viewService) {
             width: MediaQuery.of(viewService.context).size.width,
             height: MediaQuery.of(viewService.context).size.height,
             child: state.isRing ? Image(
-              image: AssetImage('images/ring_on.jpg'),
+              image: AssetImage('images/warning_on.png'),
 //              color: Colors.red,
               fit: BoxFit.scaleDown,
             ) : Image(
-              image: AssetImage('images/ring_off.jpg'),
+              image: AssetImage('images/warning_off.png'),
 //              color: Colors.blue,
               fit: BoxFit.scaleDown,
             )
