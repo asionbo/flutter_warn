@@ -8,10 +8,13 @@
 - 给人来个提示？等等有待发掘
 
 部分截图：
-![1.jpg]()
+
+![1.jpg](https://github.com/asionbo/flutter_warn/blob/master/screenshots/1.jpg?raw=true)
+![2.jpg](https://github.com/asionbo/flutter_warn/blob/master/screenshots/2.jpg?raw=true)
+![3.jpg](https://github.com/asionbo/flutter_warn/blob/master/screenshots/3.jpg?raw=true)
 
 ## 我要试下
-APP下载地址：[url]()
+APP下载地址：[url](https://github.com/asionbo/flutter_warn/blob/master/warn.apk)
 
 ## TODO
 - 加入全屏时间展示
