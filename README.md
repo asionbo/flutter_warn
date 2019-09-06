@@ -1,16 +1,18 @@
 # warn
 
-My side Flutter application.
+结合**fish_redux**学习flutter。
 
-## Getting Started
+## APP应用场景
+- 想发出警报，引人注意？
+- or， 不想发声，只想让对方会意？
+- 给人来个提示？等等有待发掘
 
-This project is a starting point for a Flutter application.
+部分截图：
+![1.jpg]()
 
-A few resources to get you started if this is your first Flutter project:
+## 我要试下
+APP下载地址：[url]()
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+## TODO
+- 加入全屏时间展示
+- 动画时间，方式可自定义
