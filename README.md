@@ -1,6 +1,6 @@
 # warn
 
-结合**fish_redux**学习flutter。
+结合**fish-redux**学习flutter。
 
 ## APP应用场景
 - 想发出警报，引人注意？
