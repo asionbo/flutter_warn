@@ -9,10 +9,9 @@
 
 部分截图：
 
-![11.jpg](https://github.com/asionbo/flutter_warn/blob/master/screenshots/11.jpg?raw=true)
-![22.jpg](https://github.com/asionbo/flutter_warn/blob/master/screenshots/22.jpg?raw=true)
-![33.jpg](https://github.com/asionbo/flutter_warn/blob/master/screenshots/33.jpg?raw=true)
-![21.jpg](https://github.com/asionbo/flutter_warn/blob/master/screenshots/21.jpg?raw=true)
+<img src="https://github.com/asionbo/flutter_warn/blob/master/screenshots/11.jpg" width="200"><img src="https://github.com/asionbo/flutter_warn/blob/master/screenshots/22.jpg" width="200"><img src="https://github.com/asionbo/flutter_warn/blob/master/screenshots/33.jpg" width="200">
+
+<img src="https://github.com/asionbo/flutter_warn/blob/master/screenshots/21.jpg" width="356">
 
 ## 我要试下
 APP下载地址：[url](https://github.com/asionbo/flutter_warn/blob/master/warn.apk)
